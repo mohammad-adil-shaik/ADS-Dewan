@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
@@ -193,12 +192,17 @@ arr[secondVal] = temp;
 }
 
 //In Place Quick Sort implementation
-public static void InPlaceQuickSort(int arr[], int l, int h){
-if(l < h){
-    int pivot = partition(arr, l, h);  // Get the pivot index
-    InPlaceQuickSort(arr, l, pivot - 1);  // Sort the left sub-array
-    InPlaceQuickSort(arr, pivot + 1, h);  // Sort the right sub-array
-}
+public static void InPlaceQuickSort(int arr[], int low, int high ){
+    while (low < high) {
+        int pivot = partition(arr, low, high);
+        if (pivot - low < high - pivot) {
+            InPlaceQuickSort(arr, low, pivot - 1);
+            low = pivot + 1;
+        } else {
+            InPlaceQuickSort(arr, pivot + 1, high);
+            high = pivot - 1;
+        }
+    }
 }
 
 // Partition function for in-place QuickSort
