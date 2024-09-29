@@ -42,12 +42,16 @@ Enter the size of the array:
 100000
 <-- Insertion Sort -->
 Time taken for execution: 5661709900
+
 <-- Merge Sort -->
 Time taken for execution: 16705000
+
 <-- Heap Sort -->
 Time taken for execution: 21961800
+
 <-- In place Quick Sort -->
 Time taken for execution: 12089900
+
 <-- Optimised Quick Sort -->
 Time taken for execution: 17688200
 
@@ -100,6 +104,9 @@ A hybrid approach where Quick Sort is employed, but switches to Insertion Sort f
    javac Ranking_algorithms.java Reverse_Sorted_Sorting.java Sorted_Array.java
    ```
 3. Run the Java programs:
+   
    java Ranking_algorithms
+   
    java Reverse_Sorted_Sorting
+   
    java Sorted_Array
