@@ -40,19 +40,25 @@ The program will output the execution time of each sorting algorithm in nanoseco
 
 Enter the size of the array:
 100000
+
 <-- Insertion Sort -->
+
 Time taken for execution: 5661709900
 
 <-- Merge Sort -->
+
 Time taken for execution: 16705000
 
 <-- Heap Sort -->
+
 Time taken for execution: 21961800
 
 <-- In place Quick Sort -->
+
 Time taken for execution: 12089900
 
 <-- Optimised Quick Sort -->
+
 Time taken for execution: 17688200
 
 ## Sorting Algorithms Explained
