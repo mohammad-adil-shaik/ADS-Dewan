@@ -138,12 +138,12 @@ while (rightPos  < index2) {
 // Heap Sort implementation
 public static void HeapSort(int[] arr) {
         int length = arr.length;
-        for (int posVal = length / 2 - 1; posVal >= 0; posVal--) {
-            buildHeap(arr, length, posVal);
+        for (int posValue = length / 2 - 1; posValue >= 0; posValue--) {
+            buildHeap(arr, length, posValue);
     }
-    for (int indexValue = length - 1; indexValue >= 0; indexValue--) {
-        exchange(arr, 0, indexValue);
-        buildHeap(arr, indexValue, 0);
+    for (int indexValue1 = length - 1; indexValue1 >= 0; indexValue1--) {
+        exchange(arr, 0, indexValue1);
+        buildHeap(arr, indexValue1, 0);
     }
 }
 
